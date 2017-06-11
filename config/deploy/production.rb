@@ -1,3 +1,12 @@
+
+
+server '54.213.241.70',
+ user: 'deploy',
+ roles: %w{app db web},
+ ssh_options: {
+   keys: %w(/home/quentinf/.ssh/ServeurDeQuentin.pem),
+ }
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.

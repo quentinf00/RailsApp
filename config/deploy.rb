@@ -4,6 +4,13 @@ lock '3.6.1'
 set :application, 'myapp'
 set :repo_url, 'git@github.com:quentinf00/RailsApp.git'
 
+set :deploy_to, '/home/deploy/myapp'
+
+append :linked_files, "config/database.yml", "config/secrets.yml"
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
+
+
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
