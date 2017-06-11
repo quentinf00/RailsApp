@@ -10,6 +10,10 @@ gem 'capistrano-rails', '~> 1.2'
 gem 'capistrano-passenger', '~> 0.2.0'
 
 gem 'capistrano-rbenv', '~> 2.1'
+gem 'capistrano-yarn'
+gem 'capistrano-npm'
+
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -37,7 +41,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem "webpack-rails", ">= 0.9.10"
+gem "react_on_rails", "~> 6"
+gem "foreman", ">= 0.84"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -57,3 +63,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'mini_racer', platforms: :ruby
